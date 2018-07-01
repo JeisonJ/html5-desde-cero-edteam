@@ -1,0 +1,11 @@
+ul.ed-menu.web-horizontal.web-main-end
+	each pagina in paginas
+		if pagina == "inicio"
+			if pagina == paginaActual
+				li: a(href="index.html" class="selected") #{pagina}
+			else
+				li: a(href="index.html") #{pagina}
+		else if pagina == paginaActual
+			li: a(href=pagina + ".html" class="selected") #{pagina}
+		else
+			li: a(href=pagina + ".html") #{pagina}

@@ -1,0 +1,29 @@
+extends templates/template.jade
+
+append config
+	-titulo = "Contacto"
+	-paginaActual = "contacto"
+	
+block main
+	h1 Contacto
+	p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem eius doloribus labore dolor ipsam veniam quaerat nam, magni libero cupiditate officiis, ut voluptatum voluptate asperiores maxime id, unde repudiandae quos dolorem alias commodi soluta culpa? Maiores magnam praesentium voluptas blanditiis cupiditate, vero at quis! Reiciendis perferendis, voluptates delectus eum?
+	
+	form(action="#").ed-container.contacto
+		.ed-item.web-30
+			label(for="nombres") Nombre y apellido
+		.ed-item.web-70
+			input(type="text" id="nombres" name="nombres")
+		.ed-item.web-30
+			label(for="correo") Correo electronico
+		.ed-item.web-70
+			input(type="email" id="correo" name="correo")
+		.ed-item.web-30
+			label(for="mensaje") Escriba su mensaje
+		.ed-item.web-70
+			textarea(id="mensaje" name="nmensaje" col="30" rows="10")
+		.ed-item
+			input(type="submit").enviar
+
+block aside
+	h2 Siguenos en facebook
+	a(href="#") Seguir

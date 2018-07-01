@@ -1,0 +1,70 @@
+
+header {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.logo {
+	height:65px;
+	width:auto;
+}
+
+.ed-menu a {
+	text-transform: uppercase;	
+}
+
+.ed-menu a:hover,
+.ed-menu a.selected {
+	background: steelblue;	
+	color: #fff;
+}
+
+.ed-menu li {
+	margin-left: 3px;
+}
+
+#banner img {
+	border: 1px #999 solid;
+	padding: 3px;
+	width:100%;
+	height:500px;
+}
+
+aside h2 {
+	font-size: 1.2em;
+}
+
+footer {
+	background: #222;
+	text-align: center;
+	font-size: .9em;
+	color: #eee;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	margin-top: 4em;
+}
+
+.contacto {
+	width: 80%;
+	margin: 2em auto;
+}
+
+.contacto .ed-item {
+	margin-bottom: 1em;
+}
+
+.contacto input,
+.contacto textarea {
+	width:100%;
+}
+
+.enviar {
+	display: table;
+	width: auto !important;
+	background: steelblue;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 2;
+	padding: 0 1em;
+	border: none;
+}

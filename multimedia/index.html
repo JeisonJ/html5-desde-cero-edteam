@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Trabakando con multimedia</title>
+		<meta charseet="UTF-8">
+		<meta name="description" content="Uso de multimedia en la web">
+		<link rel="icon" href="">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Multimedia en la web</h1>
+
+		<section>
+			<h2>Audio</h2>
+			<!-- 
+				controls	Muestra los controles.
+				loop		Vuelve a comenzar la reproduccion.
+				autoplay	Reproduce automaticamente.
+			 -->
+			<audio src="059.mp3" controls></audio>
+		</section>
+
+		<hr>
+
+		<section>
+			<h2>Video</h2>
+			<!-- 
+				controls	Muestra los controles.
+				loop		Vuelve a comenzar la reproduccion.
+				autoplay	Reproduce automaticamente.
+				muted		Para que se reprodusca sin sonido.
+				poster		Muestra una imagen.
+			 -->
+			<video 
+				src="google.mp4" 
+				controls
+				poster="google.jpg"
+				muted
+				autoplay 
+				></video>
+		</section>
+
+		<hr>
+
+		<section>
+			<video src="google.mp4" id="video"></video>
+		<div class="botones">
+			<button onclick="reproducir()">Play</button>
+			<button onclick="pausar()">Pause</button>
+		</div>
+		</section>
+
+		<script>
+			var video = document.getElementById("video");
+			//console.log(video);
+
+			function reproducir() {
+				video.play();	// play() Metodo propio de la API de video.
+			}
+
+			function pausar() {
+				video.pause();	// pause() Metodo propio de la API de video.
+			}
+		</script>
+	</body>
+</html>

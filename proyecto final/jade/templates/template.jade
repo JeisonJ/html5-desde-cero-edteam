@@ -1,0 +1,33 @@
+block config
+	include ../config/variables.jade
+
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title #{titulo} | #{sitio}
+		meta(name="description" content=descripcion)
+		link(rel="icon" href="images/logo.png")
+		link(rel="stylesheet" href="css/edgrid.css")
+		link(rel="stylesheet" href="css/style.css")
+	body
+		header.ed-container
+			.ed-item.web-20
+				include ../blocks/logo.jade
+			.ed-item.web-80
+				nav
+					include ../blocks/menu2.jade
+		#banner.ed-container
+			.ed-item
+				include ../blocks/banner.jade
+
+		.ed-container
+			main.ed-item.web-75
+				block main
+			aside.ed-item.web-25
+				block aside
+
+		footer
+			.ed-container
+				.ed-item
+					include ../blocks/footer.jade

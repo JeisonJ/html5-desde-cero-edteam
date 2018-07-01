@@ -1,0 +1,153 @@
+<!-- Le digo al navegador que tipo de documento es -->
+<!DOCTYPE HTML>
+<html lang="es">
+<!-- head para mostrar metadatos -->
+	<head>
+		<title>Clase 2: Estructura semantica</title>
+		<!-- Para que se muestren bien los caracteres en ingles -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Aqui va la descripcion de la pagina 
+		que buscara google - Clase 2 del curso HTML5">
+		<link rel="icon" href="favicon2.png">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<!-- Estructura de la pagina -->
+	<body>
+
+	<!-- Etiquetas basicas de html: 
+
+		Encabezados: Encargadas de mostrar titulos y subtitulos
+		Van de <h1> a <h6> - del ingles heading.
+
+		Los subtitulos dependen de los titulos, dependen gerarquicamente.
+		Nunca usar como tama#o, ellos engloban los titulos, el tama#o se 
+		le asigna desde css -->
+	
+		<h2 class="titulo">Encabezados disponible: h1 a h6 </h2>
+
+		<h1>Encabezado 1</h1>
+		<h2>Encabezado 2</h2>
+		<h3>Encabezado 3</h3>
+		<h4>Encabezado 4</h4>
+		<h5>Encabezado 5</h5>
+		<h6>Encabezado 5</h6>
+		
+		<hr>
+
+		<!-- Asignando tama#o a los titulos desde CSS -->
+		<h2 class="titulo"> Asignando tama#o a los titulos desde CSS</h2>
+		
+		<h1 class="title-size">Tama#o desde CSS para h1</h1>
+		<h6 class="title-size">tama#o desde CSS para h6</h6>
+		
+		<hr>
+
+		<h2 class="title-size"> Parrafos</h2>
+		<!-- Los parrafos son bloques de texto -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nulla. Unde, praesentium, ut! Doloremque culpa rerum iure quo alias! Et sed ipsa consectetur itaque fugit, nobis corporis sunt vitae maxime, aliquid quam ullam voluptate facilis ut incidunt, eveniet ratione mollitia ipsam est? Quis explicabo harum delectus accusantium ducimus, quia labore!</p>
+
+		<hr>
+
+		<h2 class="title-sizq">Elementos de boque (block) y elementos de linea (inline)</h2>
+
+		<p>Los elementos inline se colocan uno al lado del otro hasta completar el espacio 
+		disponible en pantalla, luego se colocan debajo. <br>
+		Tienen sepracion por defecto</p>
+
+		<!-- Se colocaran una al lado de la otra por ser elementos inline 
+			<img>
+			<input>
+			<label>
+			<a>
+			<span>
+		-->
+		<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+		<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+		<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+		<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+
+
+
+		<p>Los elementos en bloque se reservan todo el espacio horizontal aunque no lo ocupen 
+		por completo</p>
+
+		<!-- Se colocaran una debajo de la otra por ser elementos block 
+			<h1 a h6>
+			<p>
+			<ul>
+			<li>
+			<div>
+		-->
+
+		<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nulla. Unde, praesentium, ut! Doloremque culpa rerum iure quo alias! Et sed ipsa consectetur itaque fugit, nobis corporis sunt vitae maxime, aliquid quam ullam voluptate facilis ut incidunt, eveniet ratione mollitia ipsam est? Quis explicabo harum delectus accusantium ducimus, quia labore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nulla. Unde, praesentium, ut! Doloremque culpa rerum iure quo alias! Et sed ipsa consectetur itaque fugit, nobis corporis sunt vitae maxime, aliquid quam ullam voluptate facilis ut incidunt, eveniet ratione mollitia ipsam est? Quis explicabo harum </p>
+		
+		<div>
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+			<img alt="Imagen no encontrada" src="DfQ-JkvU8AAnY8f.png">
+		</div>
+
+		<hr>
+
+		<h2 class="title-size">Estructura semantica</h2>
+		<p>Anteriormente en HTML4 habia pocas etiquetas semnaticas.
+		Para los casos en los que no habia una etiqueta esecifica se 
+		usaban dos etiquetas genericas:</p> <br><br>
+		<pre>
+			div  (block) 
+			span (inline)
+		</pre>
+	
+		<p>En HTML5 se introducen nuevas etiquetas semanticas para elementos
+		block e inline. Estas pueden aparecer varias veces menos el main, el main es unico</p>
+		<p>Para los elementos block: </p>
+		<pre>
+			header 	(Encabezados) 													
+			nav 	(navegacion, para poner menus)						
+			footer  (pie de pagina)										
+			article (contenido independiente)							
+			aside   (contenido relacionado pero secundario)				
+			section (secciones o divisiones de un contenido)			
+			main 	(Para mostrar contenido principal, debe ser unico) 	
+		</pre>
+		
+		<!-- Los article y section deberian tener un titulo -->
+		
+		<hr>
+		
+		<h2 class="title-size"> Etiquetas de texto</h2>
+
+		<p>Etiqueta &#60;pre&#62; y &#60;code&#62;</p>
+
+		<code>
+			<pre>
+				public void saludo() {
+					System.out.println("Hola mundo!");
+				}
+			</pre>
+		</code>
+
+		<p>Lorem <i>ipsum dolor sit amet</i>, consectetu<sub>r</sub> adipisicin<sup>g</sup> elit. Sint doloribus, vitae sunt fuga <b>voluptatem nisi similique</b>, sequi reiciendis praesentium! <u>Consectetur et, esse rerum itaque </u> magnam quos <em>enfasis</em> <strong>mucho mas enfasis</strong>.</p>
+
+		<p><strong>Citas:</strong></p>
+
+		<p>Dijo: <q>Solo se que nada se</q>.</p>
+
+		<p>Dijo:</p>
+			<blockquote>
+				"Solo se que nada se".
+			</blockquote>
+
+		<div>
+			<a href="estructura-semantica.html">Estructura semantica correcta</a>
+		</div>
+	</body>
+</html>
